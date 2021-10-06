@@ -1,4 +1,4 @@
-module github.com/typesense/typesense-go
+module github.com/netvyne/typesense-go
 
 go 1.15
 
