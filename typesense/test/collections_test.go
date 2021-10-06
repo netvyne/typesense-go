@@ -1,3 +1,4 @@
+//go:build integration
 // +build integration
 
 package test
@@ -5,9 +6,9 @@ package test
 import (
 	"testing"
 
+	"github.com/netvyne/typesense-go/typesense/api"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/typesense/typesense-go/typesense/api"
 )
 
 func TestCollectionCreate(t *testing.T) {

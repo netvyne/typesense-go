@@ -3,7 +3,7 @@ package typesense
 import (
 	"context"
 
-	"github.com/typesense/typesense-go/typesense/api"
+	"github.com/netvyne/typesense-go/typesense/api"
 )
 
 // OverridesInterface is a type for Search Overrides API operations

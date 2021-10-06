@@ -1,3 +1,4 @@
+//go:build integration && !docker
 // +build integration,!docker
 
 package test
@@ -8,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/typesense/typesense-go/typesense"
+	"github.com/netvyne/typesense-go/typesense"
 )
 
 func waitHealthyStatus(client *typesense.Client, timeout time.Duration) error {

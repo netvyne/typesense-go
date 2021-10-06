@@ -1,3 +1,4 @@
+//go:build integration && docker
 // +build integration,docker
 
 package test
@@ -10,10 +11,10 @@ import (
 	"log"
 	"time"
 
+	"github.com/netvyne/typesense-go/typesense"
+	"github.com/netvyne/typesense-go/typesense/api"
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
-	"github.com/typesense/typesense-go/typesense"
-	"github.com/typesense/typesense-go/typesense/api"
 )
 
 var typesenseC testcontainers.Container

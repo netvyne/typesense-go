@@ -1,3 +1,4 @@
+//go:build integration
 // +build integration
 
 package test
@@ -7,8 +8,8 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/netvyne/typesense-go/typesense/api"
 	"github.com/stretchr/testify/require"
-	"github.com/typesense/typesense-go/typesense/api"
 )
 
 func TestDocumentCreate(t *testing.T) {

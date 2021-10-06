@@ -1,3 +1,4 @@
+//go:build integration
 // +build integration
 
 package test
@@ -8,9 +9,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/netvyne/typesense-go/typesense/api"
+	"github.com/netvyne/typesense-go/typesense/api/pointer"
 	"github.com/stretchr/testify/require"
-	"github.com/typesense/typesense-go/typesense/api"
-	"github.com/typesense/typesense-go/typesense/api/pointer"
 )
 
 func newUUIDName(namePrefix string) string {

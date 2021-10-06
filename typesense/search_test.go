@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
+	"github.com/netvyne/typesense-go/typesense/api"
+	"github.com/netvyne/typesense-go/typesense/api/pointer"
+	"github.com/netvyne/typesense-go/typesense/mocks"
 	"github.com/stretchr/testify/assert"
-	"github.com/typesense/typesense-go/typesense/api"
-	"github.com/typesense/typesense-go/typesense/api/pointer"
-	"github.com/typesense/typesense-go/typesense/mocks"
 )
 
 func newSearchParams() *api.SearchCollectionParams {
